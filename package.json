@@ -1,0 +1,40 @@
+{
+  "name": "react-monorepo-template",
+  "version": "0.0.1",
+  "description": "A React Monorepo template with npm workspaces, Rollup, and Storybook.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "React",
+    "Monorepo",
+    "Storybook"
+  ],
+  "author": "Jason Wu",
+  "license": "ISC",
+  "workspaces": [
+    "packages\\lib-a",
+    "packages\\lib-b"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@storybook/addon-actions": "^6.4.8",
+    "@storybook/addon-essentials": "^6.4.8",
+    "@storybook/addon-links": "^6.4.8",
+    "@storybook/react": "^6.4.8",
+    "babel-loader": "^8.2.3",
+    "node-sass": "^7.0.0",
+    "postcss": "^8.4.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.60.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^4.5.2"
+  }
+}

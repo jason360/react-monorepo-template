@@ -1,0 +1,15 @@
+.DS_STORE
+.idea
+*.iml
+.vscode/*
+!.vscode/launch.json
+*.log
+*.tsbuildinfo
+/.eslintcache
+/tmp
+
+# Project exclude paths
+**/dist
+**/build
+node_modules
+package-lock.json
