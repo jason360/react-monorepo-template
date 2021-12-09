@@ -44,3 +44,24 @@ npm install -D postcss
 // run story book
 npm run storybook
 ```
+## adds jest and @testing-library/react
+```shell
+npm install -D jest @testing-library/react @testing-library/jest-dom @testing-library/user-event -ws
+
+// install babel for jest
+npm install -D babel-jest @babel/preset-env @babel/preset-react -ws
+
+// install identity-obj-proxy for CSS Modules
+npm install -D identity-obj-proxy -ws
+```
+Adds moduleNameMapper in package.json for static assets
+```json
+{
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  }
+}
+```

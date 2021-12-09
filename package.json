@@ -16,17 +16,20 @@
   "author": "Jason Wu",
   "license": "ISC",
   "workspaces": [
-    "packages\\lib-a",
-    "packages\\lib-b"
+    "packages/lib-a",
+    "packages/lib-b"
   ],
   "devDependencies": {
     "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@storybook/addon-actions": "^6.4.8",
     "@storybook/addon-essentials": "^6.4.8",
     "@storybook/addon-links": "^6.4.8",
     "@storybook/react": "^6.4.8",
+    "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
     "node-sass": "^7.0.0",
     "postcss": "^8.4.4",
