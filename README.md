@@ -34,6 +34,20 @@ npm install @mui/material @emotion/react @emotion/styled -w lib-a
 ```shell
 npm install -D rollup @rollup/plugin-commonjs @rollup/plugin-node-resolve rollup-plugin-peer-deps-external rollup-plugin-postcss rollup-plugin-terser @rollup/plugin-babel @rollup/plugin-replace node-sass @babel/preset-react
 ```
+In case of getting errors like 'someimport is not exported by somelib', you can try adding the following config:
+
+```js
+plugins: [
+  peerDepsExternal(),
+  babel({
+    presets: ["@babel/preset-env", "@babel/preset-react"],
+    exclude: /node_modules/
+  }),
+  commonjs({
+    include: /node_modules/
+  })
+]
+```
 ## adds storybook
 ```shell
 npx sb init --type react
